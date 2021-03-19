@@ -30,26 +30,12 @@
         {
             this.tabGeral = new System.Windows.Forms.TabControl();
             this.tabEquipamentos = new System.Windows.Forms.TabPage();
-            this.tabChamados = new System.Windows.Forms.TabPage();
-            this.lkLblSobre = new System.Windows.Forms.LinkLabel();
-            this.gBoxEquipamentosAdicionar = new System.Windows.Forms.GroupBox();
-            this.gBoxEquipamentosEditar = new System.Windows.Forms.GroupBox();
             this.gBoxEquipamentosDeletar = new System.Windows.Forms.GroupBox();
-            this.lblEquipAddNome = new System.Windows.Forms.Label();
-            this.lblEquipAddPreco = new System.Windows.Forms.Label();
-            this.lblEquipAddSn = new System.Windows.Forms.Label();
-            this.lblEquipAddFabricacao = new System.Windows.Forms.Label();
-            this.lblEquipAddFabricante = new System.Windows.Forms.Label();
-            this.txtEquipAddNome = new System.Windows.Forms.TextBox();
-            this.maskTxtEquipAddPreco = new System.Windows.Forms.MaskedTextBox();
-            this.txtEquipAddPrecoReais = new System.Windows.Forms.Label();
-            this.txtEquipAddFabricante = new System.Windows.Forms.TextBox();
-            this.txtEquipAddSn = new System.Windows.Forms.TextBox();
-            this.maskTxtEquipAddData = new System.Windows.Forms.MaskedTextBox();
-            this.btnEquipAdd = new System.Windows.Forms.Button();
-            this.btnEquipEditarBuscar = new System.Windows.Forms.Button();
-            this.lblEquipEditarBuscarSn = new System.Windows.Forms.Label();
-            this.txtEquipEditarBuscarSn = new System.Windows.Forms.TextBox();
+            this.btnDeletar = new System.Windows.Forms.Button();
+            this.lblEquipDeletarSn = new System.Windows.Forms.Label();
+            this.txtEquipDeletarSn = new System.Windows.Forms.TextBox();
+            this.gBoxEquipamentosEditar = new System.Windows.Forms.GroupBox();
+            this.txtEquipEditarPreco = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.maskTxtEquipEditarData = new System.Windows.Forms.MaskedTextBox();
             this.txtEquipEditarSn = new System.Windows.Forms.TextBox();
@@ -61,41 +47,36 @@
             this.lblEquipEditarSn = new System.Windows.Forms.Label();
             this.lblEquipEditarPreco = new System.Windows.Forms.Label();
             this.lblEquipEditarNome = new System.Windows.Forms.Label();
-            this.btnDeletar = new System.Windows.Forms.Button();
-            this.lblEquipDeletarSn = new System.Windows.Forms.Label();
-            this.txtEquipDeletarSn = new System.Windows.Forms.TextBox();
-            this.gBoxChamadosAdicionar = new System.Windows.Forms.GroupBox();
-            this.btnChamadosAdd = new System.Windows.Forms.Button();
-            this.txtChamadosAddTitulo = new System.Windows.Forms.TextBox();
-            this.lblChamadosAddEquip = new System.Windows.Forms.Label();
-            this.lblChamadosAddDesc = new System.Windows.Forms.Label();
-            this.lblChamadosAddData = new System.Windows.Forms.Label();
-            this.lblChamadosAddTitulo = new System.Windows.Forms.Label();
-            this.txtEquipBuscarSn = new System.Windows.Forms.TextBox();
-            this.lblEquipBuscarSn = new System.Windows.Forms.Label();
-            this.btnBuscarSn = new System.Windows.Forms.Button();
-            this.lblEquipMostraNome = new System.Windows.Forms.Label();
-            this.lblEquipMostraSn = new System.Windows.Forms.Label();
-            this.lblEquipMostraFabricante = new System.Windows.Forms.Label();
+            this.btnEquipEditarBuscar = new System.Windows.Forms.Button();
+            this.lblEquipEditarBuscarSn = new System.Windows.Forms.Label();
+            this.txtEquipEditarBuscarSn = new System.Windows.Forms.TextBox();
+            this.gBoxEquipamentosAdicionar = new System.Windows.Forms.GroupBox();
+            this.btnEquipAdd = new System.Windows.Forms.Button();
+            this.maskTxtEquipAddData = new System.Windows.Forms.MaskedTextBox();
+            this.txtEquipAddSn = new System.Windows.Forms.TextBox();
+            this.txtEquipAddFabricante = new System.Windows.Forms.TextBox();
+            this.txtEquipAddPrecoReais = new System.Windows.Forms.Label();
+            this.maskTxtEquipAddPreco = new System.Windows.Forms.MaskedTextBox();
+            this.txtEquipAddNome = new System.Windows.Forms.TextBox();
+            this.lblEquipAddFabricante = new System.Windows.Forms.Label();
+            this.lblEquipAddFabricacao = new System.Windows.Forms.Label();
+            this.lblEquipAddSn = new System.Windows.Forms.Label();
+            this.lblEquipAddPreco = new System.Windows.Forms.Label();
+            this.lblEquipAddNome = new System.Windows.Forms.Label();
             this.gBoxEquipamentosBuscar = new System.Windows.Forms.GroupBox();
+            this.lblEquipMostraFabricante = new System.Windows.Forms.Label();
+            this.lblEquipMostraSn = new System.Windows.Forms.Label();
+            this.lblEquipMostraNome = new System.Windows.Forms.Label();
+            this.btnBuscarSn = new System.Windows.Forms.Button();
+            this.lblEquipBuscarSn = new System.Windows.Forms.Label();
+            this.txtEquipBuscarSn = new System.Windows.Forms.TextBox();
+            this.tabChamados = new System.Windows.Forms.TabPage();
             this.gBoxChamadosDeletar = new System.Windows.Forms.GroupBox();
             this.btnChamadoDeletar = new System.Windows.Forms.Button();
             this.lblChamadoDeletarId = new System.Windows.Forms.Label();
             this.txtChamadoDeletarId = new System.Windows.Forms.TextBox();
             this.gBoxChamadosEditar = new System.Windows.Forms.GroupBox();
-            this.btnChamadosEditarBuscar = new System.Windows.Forms.Button();
-            this.lblChamadosEditarBuscarId = new System.Windows.Forms.Label();
-            this.txtChamadosEditarBuscarId = new System.Windows.Forms.TextBox();
-            this.gBoxChamadosBuscar = new System.Windows.Forms.GroupBox();
-            this.lblChamadoMostraDataAbertura = new System.Windows.Forms.Label();
-            this.lblChamadoMostraEquip = new System.Windows.Forms.Label();
-            this.lblChamadoMostraTitulo = new System.Windows.Forms.Label();
-            this.btnChamadosBuscar = new System.Windows.Forms.Button();
-            this.lblChamadosBuscarId = new System.Windows.Forms.Label();
-            this.txtChamadosBuscarId = new System.Windows.Forms.TextBox();
-            this.cBoxChamadosAddEquip = new System.Windows.Forms.ComboBox();
-            this.lblChamadoMostraDias = new System.Windows.Forms.Label();
-            this.cBoxChamadoEditarEquip = new System.Windows.Forms.ComboBox();
+            this.txtChamadoEditarDesc = new System.Windows.Forms.TextBox();
             this.btnEditarAtualizar = new System.Windows.Forms.Button();
             this.maskTxtChamadoEditarData = new System.Windows.Forms.MaskedTextBox();
             this.txtChamadoEditarTitulo = new System.Windows.Forms.TextBox();
@@ -103,21 +84,40 @@
             this.lblChamadoEditarDesc = new System.Windows.Forms.Label();
             this.lblChamadoEditarData = new System.Windows.Forms.Label();
             this.lblChamadoEditarTitulo = new System.Windows.Forms.Label();
-            this.maskTxtChamadosAddData = new System.Windows.Forms.MaskedTextBox();
+            this.btnChamadosEditarBuscar = new System.Windows.Forms.Button();
+            this.lblChamadosEditarBuscarId = new System.Windows.Forms.Label();
+            this.txtChamadosEditarBuscarId = new System.Windows.Forms.TextBox();
+            this.gBoxChamadosBuscar = new System.Windows.Forms.GroupBox();
+            this.lblChamadoMostraDias = new System.Windows.Forms.Label();
+            this.lblChamadoMostraDataAbertura = new System.Windows.Forms.Label();
+            this.lblChamadoMostraEquip = new System.Windows.Forms.Label();
+            this.lblChamadoMostraTitulo = new System.Windows.Forms.Label();
+            this.btnChamadosBuscar = new System.Windows.Forms.Button();
+            this.lblChamadosBuscarId = new System.Windows.Forms.Label();
+            this.txtChamadosBuscarId = new System.Windows.Forms.TextBox();
+            this.gBoxChamadosAdicionar = new System.Windows.Forms.GroupBox();
             this.txtChamadoAddDesc = new System.Windows.Forms.TextBox();
-            this.txtChamadoEditarDesc = new System.Windows.Forms.TextBox();
-            this.txtEquipEditarPreco = new System.Windows.Forms.TextBox();
+            this.btnChamadosAdd = new System.Windows.Forms.Button();
+            this.maskTxtChamadosAddData = new System.Windows.Forms.MaskedTextBox();
+            this.txtChamadosAddTitulo = new System.Windows.Forms.TextBox();
+            this.lblChamadosAddEquip = new System.Windows.Forms.Label();
+            this.lblChamadosAddDesc = new System.Windows.Forms.Label();
+            this.lblChamadosAddData = new System.Windows.Forms.Label();
+            this.lblChamadosAddTitulo = new System.Windows.Forms.Label();
+            this.lkLblSobre = new System.Windows.Forms.LinkLabel();
+            this.cBoxChamadosAddEquip = new System.Windows.Forms.ComboBox();
+            this.cBoxChamadosEditarEquip = new System.Windows.Forms.ComboBox();
             this.tabGeral.SuspendLayout();
             this.tabEquipamentos.SuspendLayout();
-            this.tabChamados.SuspendLayout();
-            this.gBoxEquipamentosAdicionar.SuspendLayout();
-            this.gBoxEquipamentosEditar.SuspendLayout();
             this.gBoxEquipamentosDeletar.SuspendLayout();
-            this.gBoxChamadosAdicionar.SuspendLayout();
+            this.gBoxEquipamentosEditar.SuspendLayout();
+            this.gBoxEquipamentosAdicionar.SuspendLayout();
             this.gBoxEquipamentosBuscar.SuspendLayout();
+            this.tabChamados.SuspendLayout();
             this.gBoxChamadosDeletar.SuspendLayout();
             this.gBoxChamadosEditar.SuspendLayout();
             this.gBoxChamadosBuscar.SuspendLayout();
+            this.gBoxChamadosAdicionar.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabGeral
@@ -146,51 +146,44 @@
             this.tabEquipamentos.Text = "Equipamentos";
             this.tabEquipamentos.UseVisualStyleBackColor = true;
             // 
-            // tabChamados
+            // gBoxEquipamentosDeletar
             // 
-            this.tabChamados.Controls.Add(this.gBoxChamadosDeletar);
-            this.tabChamados.Controls.Add(this.gBoxChamadosEditar);
-            this.tabChamados.Controls.Add(this.gBoxChamadosBuscar);
-            this.tabChamados.Controls.Add(this.gBoxChamadosAdicionar);
-            this.tabChamados.Location = new System.Drawing.Point(4, 22);
-            this.tabChamados.Name = "tabChamados";
-            this.tabChamados.Padding = new System.Windows.Forms.Padding(3);
-            this.tabChamados.Size = new System.Drawing.Size(458, 604);
-            this.tabChamados.TabIndex = 1;
-            this.tabChamados.Text = "Chamados";
-            this.tabChamados.UseVisualStyleBackColor = true;
+            this.gBoxEquipamentosDeletar.Controls.Add(this.btnDeletar);
+            this.gBoxEquipamentosDeletar.Controls.Add(this.lblEquipDeletarSn);
+            this.gBoxEquipamentosDeletar.Controls.Add(this.txtEquipDeletarSn);
+            this.gBoxEquipamentosDeletar.Location = new System.Drawing.Point(6, 520);
+            this.gBoxEquipamentosDeletar.Name = "gBoxEquipamentosDeletar";
+            this.gBoxEquipamentosDeletar.Size = new System.Drawing.Size(446, 76);
+            this.gBoxEquipamentosDeletar.TabIndex = 0;
+            this.gBoxEquipamentosDeletar.TabStop = false;
+            this.gBoxEquipamentosDeletar.Text = "Deletar";
             // 
-            // lkLblSobre
+            // btnDeletar
             // 
-            this.lkLblSobre.AutoSize = true;
-            this.lkLblSobre.Location = new System.Drawing.Point(436, 645);
-            this.lkLblSobre.Name = "lkLblSobre";
-            this.lkLblSobre.Size = new System.Drawing.Size(35, 13);
-            this.lkLblSobre.TabIndex = 1;
-            this.lkLblSobre.TabStop = true;
-            this.lkLblSobre.Text = "Sobre";
-            this.lkLblSobre.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkLblSobre_LinkClicked);
+            this.btnDeletar.Location = new System.Drawing.Point(293, 27);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
+            this.btnDeletar.TabIndex = 8;
+            this.btnDeletar.Text = "Deletar";
+            this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
-            // gBoxEquipamentosAdicionar
+            // lblEquipDeletarSn
             // 
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.btnEquipAdd);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.maskTxtEquipAddData);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddSn);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddFabricante);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddPrecoReais);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.maskTxtEquipAddPreco);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddNome);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddFabricante);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddFabricacao);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddSn);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddPreco);
-            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddNome);
-            this.gBoxEquipamentosAdicionar.Location = new System.Drawing.Point(6, 6);
-            this.gBoxEquipamentosAdicionar.Name = "gBoxEquipamentosAdicionar";
-            this.gBoxEquipamentosAdicionar.Size = new System.Drawing.Size(446, 139);
-            this.gBoxEquipamentosAdicionar.TabIndex = 2;
-            this.gBoxEquipamentosAdicionar.TabStop = false;
-            this.gBoxEquipamentosAdicionar.Text = "Adicionar";
+            this.lblEquipDeletarSn.AutoSize = true;
+            this.lblEquipDeletarSn.Location = new System.Drawing.Point(79, 32);
+            this.lblEquipDeletarSn.Name = "lblEquipDeletarSn";
+            this.lblEquipDeletarSn.Size = new System.Drawing.Size(84, 13);
+            this.lblEquipDeletarSn.TabIndex = 7;
+            this.lblEquipDeletarSn.Text = "Número de serie";
+            // 
+            // txtEquipDeletarSn
+            // 
+            this.txtEquipDeletarSn.Location = new System.Drawing.Point(169, 29);
+            this.txtEquipDeletarSn.MaxLength = 20;
+            this.txtEquipDeletarSn.Name = "txtEquipDeletarSn";
+            this.txtEquipDeletarSn.Size = new System.Drawing.Size(113, 20);
+            this.txtEquipDeletarSn.TabIndex = 6;
             // 
             // gBoxEquipamentosEditar
             // 
@@ -216,150 +209,13 @@
             this.gBoxEquipamentosEditar.TabStop = false;
             this.gBoxEquipamentosEditar.Text = "Editar";
             // 
-            // gBoxEquipamentosDeletar
+            // txtEquipEditarPreco
             // 
-            this.gBoxEquipamentosDeletar.Controls.Add(this.btnDeletar);
-            this.gBoxEquipamentosDeletar.Controls.Add(this.lblEquipDeletarSn);
-            this.gBoxEquipamentosDeletar.Controls.Add(this.txtEquipDeletarSn);
-            this.gBoxEquipamentosDeletar.Location = new System.Drawing.Point(6, 520);
-            this.gBoxEquipamentosDeletar.Name = "gBoxEquipamentosDeletar";
-            this.gBoxEquipamentosDeletar.Size = new System.Drawing.Size(446, 76);
-            this.gBoxEquipamentosDeletar.TabIndex = 0;
-            this.gBoxEquipamentosDeletar.TabStop = false;
-            this.gBoxEquipamentosDeletar.Text = "Deletar";
-            // 
-            // lblEquipAddNome
-            // 
-            this.lblEquipAddNome.AutoSize = true;
-            this.lblEquipAddNome.Location = new System.Drawing.Point(6, 27);
-            this.lblEquipAddNome.Name = "lblEquipAddNome";
-            this.lblEquipAddNome.Size = new System.Drawing.Size(35, 13);
-            this.lblEquipAddNome.TabIndex = 0;
-            this.lblEquipAddNome.Text = "Nome";
-            // 
-            // lblEquipAddPreco
-            // 
-            this.lblEquipAddPreco.AutoSize = true;
-            this.lblEquipAddPreco.Location = new System.Drawing.Point(6, 54);
-            this.lblEquipAddPreco.Name = "lblEquipAddPreco";
-            this.lblEquipAddPreco.Size = new System.Drawing.Size(35, 13);
-            this.lblEquipAddPreco.TabIndex = 1;
-            this.lblEquipAddPreco.Text = "Preço";
-            // 
-            // lblEquipAddSn
-            // 
-            this.lblEquipAddSn.AutoSize = true;
-            this.lblEquipAddSn.Location = new System.Drawing.Point(235, 27);
-            this.lblEquipAddSn.Name = "lblEquipAddSn";
-            this.lblEquipAddSn.Size = new System.Drawing.Size(84, 13);
-            this.lblEquipAddSn.TabIndex = 2;
-            this.lblEquipAddSn.Text = "Numero de série";
-            // 
-            // lblEquipAddFabricacao
-            // 
-            this.lblEquipAddFabricacao.AutoSize = true;
-            this.lblEquipAddFabricacao.Location = new System.Drawing.Point(235, 54);
-            this.lblEquipAddFabricacao.Name = "lblEquipAddFabricacao";
-            this.lblEquipAddFabricacao.Size = new System.Drawing.Size(60, 13);
-            this.lblEquipAddFabricacao.TabIndex = 3;
-            this.lblEquipAddFabricacao.Text = "Fabricação";
-            // 
-            // lblEquipAddFabricante
-            // 
-            this.lblEquipAddFabricante.AutoSize = true;
-            this.lblEquipAddFabricante.Location = new System.Drawing.Point(6, 83);
-            this.lblEquipAddFabricante.Name = "lblEquipAddFabricante";
-            this.lblEquipAddFabricante.Size = new System.Drawing.Size(57, 13);
-            this.lblEquipAddFabricante.TabIndex = 4;
-            this.lblEquipAddFabricante.Text = "Fabricante";
-            // 
-            // txtEquipAddNome
-            // 
-            this.txtEquipAddNome.Location = new System.Drawing.Point(47, 24);
-            this.txtEquipAddNome.MaxLength = 40;
-            this.txtEquipAddNome.Name = "txtEquipAddNome";
-            this.txtEquipAddNome.Size = new System.Drawing.Size(153, 20);
-            this.txtEquipAddNome.TabIndex = 5;
-            // 
-            // maskTxtEquipAddPreco
-            // 
-            this.maskTxtEquipAddPreco.Location = new System.Drawing.Point(138, 51);
-            this.maskTxtEquipAddPreco.Mask = "0000.00";
-            this.maskTxtEquipAddPreco.Name = "maskTxtEquipAddPreco";
-            this.maskTxtEquipAddPreco.Size = new System.Drawing.Size(62, 20);
-            this.maskTxtEquipAddPreco.TabIndex = 6;
-            this.maskTxtEquipAddPreco.ValidatingType = typeof(int);
-            // 
-            // txtEquipAddPrecoReais
-            // 
-            this.txtEquipAddPrecoReais.AutoSize = true;
-            this.txtEquipAddPrecoReais.Location = new System.Drawing.Point(111, 54);
-            this.txtEquipAddPrecoReais.Name = "txtEquipAddPrecoReais";
-            this.txtEquipAddPrecoReais.Size = new System.Drawing.Size(21, 13);
-            this.txtEquipAddPrecoReais.TabIndex = 7;
-            this.txtEquipAddPrecoReais.Text = "R$";
-            // 
-            // txtEquipAddFabricante
-            // 
-            this.txtEquipAddFabricante.Location = new System.Drawing.Point(69, 80);
-            this.txtEquipAddFabricante.MaxLength = 40;
-            this.txtEquipAddFabricante.Name = "txtEquipAddFabricante";
-            this.txtEquipAddFabricante.Size = new System.Drawing.Size(131, 20);
-            this.txtEquipAddFabricante.TabIndex = 8;
-            // 
-            // txtEquipAddSn
-            // 
-            this.txtEquipAddSn.Location = new System.Drawing.Point(325, 24);
-            this.txtEquipAddSn.MaxLength = 20;
-            this.txtEquipAddSn.Name = "txtEquipAddSn";
-            this.txtEquipAddSn.Size = new System.Drawing.Size(113, 20);
-            this.txtEquipAddSn.TabIndex = 9;
-            // 
-            // maskTxtEquipAddData
-            // 
-            this.maskTxtEquipAddData.Location = new System.Drawing.Point(325, 51);
-            this.maskTxtEquipAddData.Mask = "00/00/0000";
-            this.maskTxtEquipAddData.Name = "maskTxtEquipAddData";
-            this.maskTxtEquipAddData.Size = new System.Drawing.Size(69, 20);
-            this.maskTxtEquipAddData.TabIndex = 10;
-            this.maskTxtEquipAddData.ValidatingType = typeof(System.DateTime);
-            // 
-            // btnEquipAdd
-            // 
-            this.btnEquipAdd.Location = new System.Drawing.Point(363, 108);
-            this.btnEquipAdd.Name = "btnEquipAdd";
-            this.btnEquipAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnEquipAdd.TabIndex = 11;
-            this.btnEquipAdd.Text = "Adicionar";
-            this.btnEquipAdd.UseVisualStyleBackColor = true;
-            this.btnEquipAdd.Click += new System.EventHandler(this.btnEquipAdd_Click);
-            // 
-            // btnEquipEditarBuscar
-            // 
-            this.btnEquipEditarBuscar.Location = new System.Drawing.Point(289, 19);
-            this.btnEquipEditarBuscar.Name = "btnEquipEditarBuscar";
-            this.btnEquipEditarBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnEquipEditarBuscar.TabIndex = 5;
-            this.btnEquipEditarBuscar.Text = "Buscar";
-            this.btnEquipEditarBuscar.UseVisualStyleBackColor = true;
-            this.btnEquipEditarBuscar.Click += new System.EventHandler(this.btnEquipEditarBuscar_Click);
-            // 
-            // lblEquipEditarBuscarSn
-            // 
-            this.lblEquipEditarBuscarSn.AutoSize = true;
-            this.lblEquipEditarBuscarSn.Location = new System.Drawing.Point(75, 24);
-            this.lblEquipEditarBuscarSn.Name = "lblEquipEditarBuscarSn";
-            this.lblEquipEditarBuscarSn.Size = new System.Drawing.Size(84, 13);
-            this.lblEquipEditarBuscarSn.TabIndex = 4;
-            this.lblEquipEditarBuscarSn.Text = "Número de serie";
-            // 
-            // txtEquipEditarBuscarSn
-            // 
-            this.txtEquipEditarBuscarSn.Location = new System.Drawing.Point(165, 21);
-            this.txtEquipEditarBuscarSn.MaxLength = 20;
-            this.txtEquipEditarBuscarSn.Name = "txtEquipEditarBuscarSn";
-            this.txtEquipEditarBuscarSn.Size = new System.Drawing.Size(113, 20);
-            this.txtEquipEditarBuscarSn.TabIndex = 3;
+            this.txtEquipEditarPreco.Location = new System.Drawing.Point(138, 96);
+            this.txtEquipEditarPreco.MaxLength = 7;
+            this.txtEquipEditarPreco.Name = "txtEquipEditarPreco";
+            this.txtEquipEditarPreco.Size = new System.Drawing.Size(62, 20);
+            this.txtEquipEditarPreco.TabIndex = 24;
             // 
             // btnSalvar
             // 
@@ -458,161 +314,159 @@
             this.lblEquipEditarNome.TabIndex = 12;
             this.lblEquipEditarNome.Text = "Nome";
             // 
-            // btnDeletar
+            // btnEquipEditarBuscar
             // 
-            this.btnDeletar.Location = new System.Drawing.Point(293, 27);
-            this.btnDeletar.Name = "btnDeletar";
-            this.btnDeletar.Size = new System.Drawing.Size(75, 23);
-            this.btnDeletar.TabIndex = 8;
-            this.btnDeletar.Text = "Deletar";
-            this.btnDeletar.UseVisualStyleBackColor = true;
-            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
+            this.btnEquipEditarBuscar.Location = new System.Drawing.Point(289, 19);
+            this.btnEquipEditarBuscar.Name = "btnEquipEditarBuscar";
+            this.btnEquipEditarBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnEquipEditarBuscar.TabIndex = 5;
+            this.btnEquipEditarBuscar.Text = "Buscar";
+            this.btnEquipEditarBuscar.UseVisualStyleBackColor = true;
+            this.btnEquipEditarBuscar.Click += new System.EventHandler(this.btnEquipEditarBuscar_Click);
             // 
-            // lblEquipDeletarSn
+            // lblEquipEditarBuscarSn
             // 
-            this.lblEquipDeletarSn.AutoSize = true;
-            this.lblEquipDeletarSn.Location = new System.Drawing.Point(79, 32);
-            this.lblEquipDeletarSn.Name = "lblEquipDeletarSn";
-            this.lblEquipDeletarSn.Size = new System.Drawing.Size(84, 13);
-            this.lblEquipDeletarSn.TabIndex = 7;
-            this.lblEquipDeletarSn.Text = "Número de serie";
+            this.lblEquipEditarBuscarSn.AutoSize = true;
+            this.lblEquipEditarBuscarSn.Location = new System.Drawing.Point(75, 24);
+            this.lblEquipEditarBuscarSn.Name = "lblEquipEditarBuscarSn";
+            this.lblEquipEditarBuscarSn.Size = new System.Drawing.Size(84, 13);
+            this.lblEquipEditarBuscarSn.TabIndex = 4;
+            this.lblEquipEditarBuscarSn.Text = "Número de serie";
             // 
-            // txtEquipDeletarSn
+            // txtEquipEditarBuscarSn
             // 
-            this.txtEquipDeletarSn.Location = new System.Drawing.Point(169, 29);
-            this.txtEquipDeletarSn.MaxLength = 20;
-            this.txtEquipDeletarSn.Name = "txtEquipDeletarSn";
-            this.txtEquipDeletarSn.Size = new System.Drawing.Size(113, 20);
-            this.txtEquipDeletarSn.TabIndex = 6;
+            this.txtEquipEditarBuscarSn.Location = new System.Drawing.Point(165, 21);
+            this.txtEquipEditarBuscarSn.MaxLength = 20;
+            this.txtEquipEditarBuscarSn.Name = "txtEquipEditarBuscarSn";
+            this.txtEquipEditarBuscarSn.Size = new System.Drawing.Size(113, 20);
+            this.txtEquipEditarBuscarSn.TabIndex = 3;
             // 
-            // gBoxChamadosAdicionar
+            // gBoxEquipamentosAdicionar
             // 
-            this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadoAddDesc);
-            this.gBoxChamadosAdicionar.Controls.Add(this.cBoxChamadosAddEquip);
-            this.gBoxChamadosAdicionar.Controls.Add(this.btnChamadosAdd);
-            this.gBoxChamadosAdicionar.Controls.Add(this.maskTxtChamadosAddData);
-            this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadosAddTitulo);
-            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddEquip);
-            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddDesc);
-            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddData);
-            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddTitulo);
-            this.gBoxChamadosAdicionar.Location = new System.Drawing.Point(6, 6);
-            this.gBoxChamadosAdicionar.Name = "gBoxChamadosAdicionar";
-            this.gBoxChamadosAdicionar.Size = new System.Drawing.Size(446, 149);
-            this.gBoxChamadosAdicionar.TabIndex = 3;
-            this.gBoxChamadosAdicionar.TabStop = false;
-            this.gBoxChamadosAdicionar.Text = "Adicionar";
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.btnEquipAdd);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.maskTxtEquipAddData);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddSn);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddFabricante);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddPrecoReais);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.maskTxtEquipAddPreco);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.txtEquipAddNome);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddFabricante);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddFabricacao);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddSn);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddPreco);
+            this.gBoxEquipamentosAdicionar.Controls.Add(this.lblEquipAddNome);
+            this.gBoxEquipamentosAdicionar.Location = new System.Drawing.Point(6, 6);
+            this.gBoxEquipamentosAdicionar.Name = "gBoxEquipamentosAdicionar";
+            this.gBoxEquipamentosAdicionar.Size = new System.Drawing.Size(446, 139);
+            this.gBoxEquipamentosAdicionar.TabIndex = 2;
+            this.gBoxEquipamentosAdicionar.TabStop = false;
+            this.gBoxEquipamentosAdicionar.Text = "Adicionar";
             // 
-            // btnChamadosAdd
+            // btnEquipAdd
             // 
-            this.btnChamadosAdd.Location = new System.Drawing.Point(357, 118);
-            this.btnChamadosAdd.Name = "btnChamadosAdd";
-            this.btnChamadosAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnChamadosAdd.TabIndex = 11;
-            this.btnChamadosAdd.Text = "Adicionar";
-            this.btnChamadosAdd.UseVisualStyleBackColor = true;
-            this.btnChamadosAdd.Click += new System.EventHandler(this.btnChamadosAdd_Click);
+            this.btnEquipAdd.Location = new System.Drawing.Point(363, 108);
+            this.btnEquipAdd.Name = "btnEquipAdd";
+            this.btnEquipAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnEquipAdd.TabIndex = 11;
+            this.btnEquipAdd.Text = "Adicionar";
+            this.btnEquipAdd.UseVisualStyleBackColor = true;
+            this.btnEquipAdd.Click += new System.EventHandler(this.btnEquipAdd_Click);
             // 
-            // txtChamadosAddTitulo
+            // maskTxtEquipAddData
             // 
-            this.txtChamadosAddTitulo.Location = new System.Drawing.Point(78, 25);
-            this.txtChamadosAddTitulo.MaxLength = 40;
-            this.txtChamadosAddTitulo.Name = "txtChamadosAddTitulo";
-            this.txtChamadosAddTitulo.Size = new System.Drawing.Size(226, 20);
-            this.txtChamadosAddTitulo.TabIndex = 5;
+            this.maskTxtEquipAddData.Location = new System.Drawing.Point(325, 51);
+            this.maskTxtEquipAddData.Mask = "00/00/0000";
+            this.maskTxtEquipAddData.Name = "maskTxtEquipAddData";
+            this.maskTxtEquipAddData.Size = new System.Drawing.Size(69, 20);
+            this.maskTxtEquipAddData.TabIndex = 10;
+            this.maskTxtEquipAddData.ValidatingType = typeof(System.DateTime);
             // 
-            // lblChamadosAddEquip
+            // txtEquipAddSn
             // 
-            this.lblChamadosAddEquip.AutoSize = true;
-            this.lblChamadosAddEquip.Location = new System.Drawing.Point(6, 118);
-            this.lblChamadosAddEquip.Name = "lblChamadosAddEquip";
-            this.lblChamadosAddEquip.Size = new System.Drawing.Size(69, 13);
-            this.lblChamadosAddEquip.TabIndex = 3;
-            this.lblChamadosAddEquip.Text = "Equipamento";
+            this.txtEquipAddSn.Location = new System.Drawing.Point(325, 24);
+            this.txtEquipAddSn.MaxLength = 20;
+            this.txtEquipAddSn.Name = "txtEquipAddSn";
+            this.txtEquipAddSn.Size = new System.Drawing.Size(113, 20);
+            this.txtEquipAddSn.TabIndex = 9;
             // 
-            // lblChamadosAddDesc
+            // txtEquipAddFabricante
             // 
-            this.lblChamadosAddDesc.AutoSize = true;
-            this.lblChamadosAddDesc.Location = new System.Drawing.Point(6, 58);
-            this.lblChamadosAddDesc.Name = "lblChamadosAddDesc";
-            this.lblChamadosAddDesc.Size = new System.Drawing.Size(55, 13);
-            this.lblChamadosAddDesc.TabIndex = 2;
-            this.lblChamadosAddDesc.Text = "Descrição";
+            this.txtEquipAddFabricante.Location = new System.Drawing.Point(69, 80);
+            this.txtEquipAddFabricante.MaxLength = 40;
+            this.txtEquipAddFabricante.Name = "txtEquipAddFabricante";
+            this.txtEquipAddFabricante.Size = new System.Drawing.Size(131, 20);
+            this.txtEquipAddFabricante.TabIndex = 8;
             // 
-            // lblChamadosAddData
+            // txtEquipAddPrecoReais
             // 
-            this.lblChamadosAddData.AutoSize = true;
-            this.lblChamadosAddData.Location = new System.Drawing.Point(310, 28);
-            this.lblChamadosAddData.Name = "lblChamadosAddData";
-            this.lblChamadosAddData.Size = new System.Drawing.Size(47, 13);
-            this.lblChamadosAddData.TabIndex = 1;
-            this.lblChamadosAddData.Text = "Abertura";
+            this.txtEquipAddPrecoReais.AutoSize = true;
+            this.txtEquipAddPrecoReais.Location = new System.Drawing.Point(111, 54);
+            this.txtEquipAddPrecoReais.Name = "txtEquipAddPrecoReais";
+            this.txtEquipAddPrecoReais.Size = new System.Drawing.Size(21, 13);
+            this.txtEquipAddPrecoReais.TabIndex = 7;
+            this.txtEquipAddPrecoReais.Text = "R$";
             // 
-            // lblChamadosAddTitulo
+            // maskTxtEquipAddPreco
             // 
-            this.lblChamadosAddTitulo.AutoSize = true;
-            this.lblChamadosAddTitulo.Location = new System.Drawing.Point(6, 28);
-            this.lblChamadosAddTitulo.Name = "lblChamadosAddTitulo";
-            this.lblChamadosAddTitulo.Size = new System.Drawing.Size(33, 13);
-            this.lblChamadosAddTitulo.TabIndex = 0;
-            this.lblChamadosAddTitulo.Text = "Titulo";
+            this.maskTxtEquipAddPreco.Location = new System.Drawing.Point(138, 51);
+            this.maskTxtEquipAddPreco.Mask = "0000.00";
+            this.maskTxtEquipAddPreco.Name = "maskTxtEquipAddPreco";
+            this.maskTxtEquipAddPreco.Size = new System.Drawing.Size(62, 20);
+            this.maskTxtEquipAddPreco.TabIndex = 6;
+            this.maskTxtEquipAddPreco.ValidatingType = typeof(int);
             // 
-            // txtEquipBuscarSn
+            // txtEquipAddNome
             // 
-            this.txtEquipBuscarSn.Location = new System.Drawing.Point(165, 30);
-            this.txtEquipBuscarSn.MaxLength = 20;
-            this.txtEquipBuscarSn.Name = "txtEquipBuscarSn";
-            this.txtEquipBuscarSn.Size = new System.Drawing.Size(113, 20);
-            this.txtEquipBuscarSn.TabIndex = 0;
+            this.txtEquipAddNome.Location = new System.Drawing.Point(47, 24);
+            this.txtEquipAddNome.MaxLength = 40;
+            this.txtEquipAddNome.Name = "txtEquipAddNome";
+            this.txtEquipAddNome.Size = new System.Drawing.Size(153, 20);
+            this.txtEquipAddNome.TabIndex = 5;
             // 
-            // lblEquipBuscarSn
+            // lblEquipAddFabricante
             // 
-            this.lblEquipBuscarSn.AutoSize = true;
-            this.lblEquipBuscarSn.Location = new System.Drawing.Point(75, 33);
-            this.lblEquipBuscarSn.Name = "lblEquipBuscarSn";
-            this.lblEquipBuscarSn.Size = new System.Drawing.Size(84, 13);
-            this.lblEquipBuscarSn.TabIndex = 1;
-            this.lblEquipBuscarSn.Text = "Número de serie";
+            this.lblEquipAddFabricante.AutoSize = true;
+            this.lblEquipAddFabricante.Location = new System.Drawing.Point(6, 83);
+            this.lblEquipAddFabricante.Name = "lblEquipAddFabricante";
+            this.lblEquipAddFabricante.Size = new System.Drawing.Size(57, 13);
+            this.lblEquipAddFabricante.TabIndex = 4;
+            this.lblEquipAddFabricante.Text = "Fabricante";
             // 
-            // btnBuscarSn
+            // lblEquipAddFabricacao
             // 
-            this.btnBuscarSn.Location = new System.Drawing.Point(289, 28);
-            this.btnBuscarSn.Name = "btnBuscarSn";
-            this.btnBuscarSn.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscarSn.TabIndex = 2;
-            this.btnBuscarSn.Text = "Buscar";
-            this.btnBuscarSn.UseVisualStyleBackColor = true;
-            this.btnBuscarSn.Click += new System.EventHandler(this.btnBuscarSn_Click);
+            this.lblEquipAddFabricacao.AutoSize = true;
+            this.lblEquipAddFabricacao.Location = new System.Drawing.Point(235, 54);
+            this.lblEquipAddFabricacao.Name = "lblEquipAddFabricacao";
+            this.lblEquipAddFabricacao.Size = new System.Drawing.Size(60, 13);
+            this.lblEquipAddFabricacao.TabIndex = 3;
+            this.lblEquipAddFabricacao.Text = "Fabricação";
             // 
-            // lblEquipMostraNome
+            // lblEquipAddSn
             // 
-            this.lblEquipMostraNome.AutoSize = true;
-            this.lblEquipMostraNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquipMostraNome.Location = new System.Drawing.Point(11, 82);
-            this.lblEquipMostraNome.Name = "lblEquipMostraNome";
-            this.lblEquipMostraNome.Size = new System.Drawing.Size(57, 16);
-            this.lblEquipMostraNome.TabIndex = 3;
-            this.lblEquipMostraNome.Text = "Nome: ";
+            this.lblEquipAddSn.AutoSize = true;
+            this.lblEquipAddSn.Location = new System.Drawing.Point(235, 27);
+            this.lblEquipAddSn.Name = "lblEquipAddSn";
+            this.lblEquipAddSn.Size = new System.Drawing.Size(84, 13);
+            this.lblEquipAddSn.TabIndex = 2;
+            this.lblEquipAddSn.Text = "Numero de série";
             // 
-            // lblEquipMostraSn
+            // lblEquipAddPreco
             // 
-            this.lblEquipMostraSn.AutoSize = true;
-            this.lblEquipMostraSn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquipMostraSn.Location = new System.Drawing.Point(11, 112);
-            this.lblEquipMostraSn.Name = "lblEquipMostraSn";
-            this.lblEquipMostraSn.Size = new System.Drawing.Size(131, 16);
-            this.lblEquipMostraSn.TabIndex = 4;
-            this.lblEquipMostraSn.Text = "Numero de série: ";
+            this.lblEquipAddPreco.AutoSize = true;
+            this.lblEquipAddPreco.Location = new System.Drawing.Point(6, 54);
+            this.lblEquipAddPreco.Name = "lblEquipAddPreco";
+            this.lblEquipAddPreco.Size = new System.Drawing.Size(35, 13);
+            this.lblEquipAddPreco.TabIndex = 1;
+            this.lblEquipAddPreco.Text = "Preço";
             // 
-            // lblEquipMostraFabricante
+            // lblEquipAddNome
             // 
-            this.lblEquipMostraFabricante.AutoSize = true;
-            this.lblEquipMostraFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquipMostraFabricante.Location = new System.Drawing.Point(11, 140);
-            this.lblEquipMostraFabricante.Name = "lblEquipMostraFabricante";
-            this.lblEquipMostraFabricante.Size = new System.Drawing.Size(90, 16);
-            this.lblEquipMostraFabricante.TabIndex = 5;
-            this.lblEquipMostraFabricante.Text = "Fabricante: ";
+            this.lblEquipAddNome.AutoSize = true;
+            this.lblEquipAddNome.Location = new System.Drawing.Point(6, 27);
+            this.lblEquipAddNome.Name = "lblEquipAddNome";
+            this.lblEquipAddNome.Size = new System.Drawing.Size(35, 13);
+            this.lblEquipAddNome.TabIndex = 0;
+            this.lblEquipAddNome.Text = "Nome";
             // 
             // gBoxEquipamentosBuscar
             // 
@@ -628,6 +482,77 @@
             this.gBoxEquipamentosBuscar.TabIndex = 0;
             this.gBoxEquipamentosBuscar.TabStop = false;
             this.gBoxEquipamentosBuscar.Text = "Buscar";
+            // 
+            // lblEquipMostraFabricante
+            // 
+            this.lblEquipMostraFabricante.AutoSize = true;
+            this.lblEquipMostraFabricante.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquipMostraFabricante.Location = new System.Drawing.Point(11, 140);
+            this.lblEquipMostraFabricante.Name = "lblEquipMostraFabricante";
+            this.lblEquipMostraFabricante.Size = new System.Drawing.Size(90, 16);
+            this.lblEquipMostraFabricante.TabIndex = 5;
+            this.lblEquipMostraFabricante.Text = "Fabricante: ";
+            // 
+            // lblEquipMostraSn
+            // 
+            this.lblEquipMostraSn.AutoSize = true;
+            this.lblEquipMostraSn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquipMostraSn.Location = new System.Drawing.Point(11, 112);
+            this.lblEquipMostraSn.Name = "lblEquipMostraSn";
+            this.lblEquipMostraSn.Size = new System.Drawing.Size(131, 16);
+            this.lblEquipMostraSn.TabIndex = 4;
+            this.lblEquipMostraSn.Text = "Numero de série: ";
+            // 
+            // lblEquipMostraNome
+            // 
+            this.lblEquipMostraNome.AutoSize = true;
+            this.lblEquipMostraNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquipMostraNome.Location = new System.Drawing.Point(11, 82);
+            this.lblEquipMostraNome.Name = "lblEquipMostraNome";
+            this.lblEquipMostraNome.Size = new System.Drawing.Size(57, 16);
+            this.lblEquipMostraNome.TabIndex = 3;
+            this.lblEquipMostraNome.Text = "Nome: ";
+            // 
+            // btnBuscarSn
+            // 
+            this.btnBuscarSn.Location = new System.Drawing.Point(289, 28);
+            this.btnBuscarSn.Name = "btnBuscarSn";
+            this.btnBuscarSn.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscarSn.TabIndex = 2;
+            this.btnBuscarSn.Text = "Buscar";
+            this.btnBuscarSn.UseVisualStyleBackColor = true;
+            this.btnBuscarSn.Click += new System.EventHandler(this.btnBuscarSn_Click);
+            // 
+            // lblEquipBuscarSn
+            // 
+            this.lblEquipBuscarSn.AutoSize = true;
+            this.lblEquipBuscarSn.Location = new System.Drawing.Point(75, 33);
+            this.lblEquipBuscarSn.Name = "lblEquipBuscarSn";
+            this.lblEquipBuscarSn.Size = new System.Drawing.Size(84, 13);
+            this.lblEquipBuscarSn.TabIndex = 1;
+            this.lblEquipBuscarSn.Text = "Número de serie";
+            // 
+            // txtEquipBuscarSn
+            // 
+            this.txtEquipBuscarSn.Location = new System.Drawing.Point(165, 30);
+            this.txtEquipBuscarSn.MaxLength = 20;
+            this.txtEquipBuscarSn.Name = "txtEquipBuscarSn";
+            this.txtEquipBuscarSn.Size = new System.Drawing.Size(113, 20);
+            this.txtEquipBuscarSn.TabIndex = 0;
+            // 
+            // tabChamados
+            // 
+            this.tabChamados.Controls.Add(this.gBoxChamadosDeletar);
+            this.tabChamados.Controls.Add(this.gBoxChamadosEditar);
+            this.tabChamados.Controls.Add(this.gBoxChamadosBuscar);
+            this.tabChamados.Controls.Add(this.gBoxChamadosAdicionar);
+            this.tabChamados.Location = new System.Drawing.Point(4, 22);
+            this.tabChamados.Name = "tabChamados";
+            this.tabChamados.Padding = new System.Windows.Forms.Padding(3);
+            this.tabChamados.Size = new System.Drawing.Size(458, 604);
+            this.tabChamados.TabIndex = 1;
+            this.tabChamados.Text = "Chamados";
+            this.tabChamados.UseVisualStyleBackColor = true;
             // 
             // gBoxChamadosDeletar
             // 
@@ -669,8 +594,8 @@
             // 
             // gBoxChamadosEditar
             // 
+            this.gBoxChamadosEditar.Controls.Add(this.cBoxChamadosEditarEquip);
             this.gBoxChamadosEditar.Controls.Add(this.txtChamadoEditarDesc);
-            this.gBoxChamadosEditar.Controls.Add(this.cBoxChamadoEditarEquip);
             this.gBoxChamadosEditar.Controls.Add(this.btnEditarAtualizar);
             this.gBoxChamadosEditar.Controls.Add(this.maskTxtChamadoEditarData);
             this.gBoxChamadosEditar.Controls.Add(this.txtChamadoEditarTitulo);
@@ -687,6 +612,77 @@
             this.gBoxChamadosEditar.TabIndex = 5;
             this.gBoxChamadosEditar.TabStop = false;
             this.gBoxChamadosEditar.Text = "Editar";
+            // 
+            // txtChamadoEditarDesc
+            // 
+            this.txtChamadoEditarDesc.Location = new System.Drawing.Point(78, 101);
+            this.txtChamadoEditarDesc.Multiline = true;
+            this.txtChamadoEditarDesc.Name = "txtChamadoEditarDesc";
+            this.txtChamadoEditarDesc.Size = new System.Drawing.Size(354, 51);
+            this.txtChamadoEditarDesc.TabIndex = 23;
+            // 
+            // btnEditarAtualizar
+            // 
+            this.btnEditarAtualizar.Location = new System.Drawing.Point(357, 161);
+            this.btnEditarAtualizar.Name = "btnEditarAtualizar";
+            this.btnEditarAtualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditarAtualizar.TabIndex = 20;
+            this.btnEditarAtualizar.Text = "Atualizar";
+            this.btnEditarAtualizar.UseVisualStyleBackColor = true;
+            this.btnEditarAtualizar.Click += new System.EventHandler(this.btnEditarAtualizar_Click);
+            // 
+            // maskTxtChamadoEditarData
+            // 
+            this.maskTxtChamadoEditarData.Location = new System.Drawing.Point(363, 68);
+            this.maskTxtChamadoEditarData.Mask = "00/00/0000";
+            this.maskTxtChamadoEditarData.Name = "maskTxtChamadoEditarData";
+            this.maskTxtChamadoEditarData.Size = new System.Drawing.Size(69, 20);
+            this.maskTxtChamadoEditarData.TabIndex = 19;
+            this.maskTxtChamadoEditarData.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtChamadoEditarTitulo
+            // 
+            this.txtChamadoEditarTitulo.Location = new System.Drawing.Point(78, 68);
+            this.txtChamadoEditarTitulo.MaxLength = 40;
+            this.txtChamadoEditarTitulo.Name = "txtChamadoEditarTitulo";
+            this.txtChamadoEditarTitulo.Size = new System.Drawing.Size(226, 20);
+            this.txtChamadoEditarTitulo.TabIndex = 18;
+            // 
+            // lblChamadoEditarEquip
+            // 
+            this.lblChamadoEditarEquip.AutoSize = true;
+            this.lblChamadoEditarEquip.Location = new System.Drawing.Point(6, 166);
+            this.lblChamadoEditarEquip.Name = "lblChamadoEditarEquip";
+            this.lblChamadoEditarEquip.Size = new System.Drawing.Size(69, 13);
+            this.lblChamadoEditarEquip.TabIndex = 17;
+            this.lblChamadoEditarEquip.Text = "Equipamento";
+            // 
+            // lblChamadoEditarDesc
+            // 
+            this.lblChamadoEditarDesc.AutoSize = true;
+            this.lblChamadoEditarDesc.Location = new System.Drawing.Point(6, 101);
+            this.lblChamadoEditarDesc.Name = "lblChamadoEditarDesc";
+            this.lblChamadoEditarDesc.Size = new System.Drawing.Size(55, 13);
+            this.lblChamadoEditarDesc.TabIndex = 16;
+            this.lblChamadoEditarDesc.Text = "Descrição";
+            // 
+            // lblChamadoEditarData
+            // 
+            this.lblChamadoEditarData.AutoSize = true;
+            this.lblChamadoEditarData.Location = new System.Drawing.Point(310, 71);
+            this.lblChamadoEditarData.Name = "lblChamadoEditarData";
+            this.lblChamadoEditarData.Size = new System.Drawing.Size(47, 13);
+            this.lblChamadoEditarData.TabIndex = 15;
+            this.lblChamadoEditarData.Text = "Abertura";
+            // 
+            // lblChamadoEditarTitulo
+            // 
+            this.lblChamadoEditarTitulo.AutoSize = true;
+            this.lblChamadoEditarTitulo.Location = new System.Drawing.Point(6, 71);
+            this.lblChamadoEditarTitulo.Name = "lblChamadoEditarTitulo";
+            this.lblChamadoEditarTitulo.Size = new System.Drawing.Size(33, 13);
+            this.lblChamadoEditarTitulo.TabIndex = 14;
+            this.lblChamadoEditarTitulo.Text = "Titulo";
             // 
             // btnChamadosEditarBuscar
             // 
@@ -729,6 +725,16 @@
             this.gBoxChamadosBuscar.TabIndex = 6;
             this.gBoxChamadosBuscar.TabStop = false;
             this.gBoxChamadosBuscar.Text = "Buscar";
+            // 
+            // lblChamadoMostraDias
+            // 
+            this.lblChamadoMostraDias.AutoSize = true;
+            this.lblChamadoMostraDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChamadoMostraDias.Location = new System.Drawing.Point(260, 105);
+            this.lblChamadoMostraDias.Name = "lblChamadoMostraDias";
+            this.lblChamadoMostraDias.Size = new System.Drawing.Size(97, 16);
+            this.lblChamadoMostraDias.TabIndex = 6;
+            this.lblChamadoMostraDias.Text = "Dias aberto: ";
             // 
             // lblChamadoMostraDataAbertura
             // 
@@ -786,98 +792,41 @@
             this.txtChamadosBuscarId.Size = new System.Drawing.Size(113, 20);
             this.txtChamadosBuscarId.TabIndex = 0;
             // 
-            // cBoxChamadosAddEquip
+            // gBoxChamadosAdicionar
             // 
-            this.cBoxChamadosAddEquip.FormattingEnabled = true;
-            this.cBoxChamadosAddEquip.Items.AddRange(new object[] {
-            "ha"});
-            this.cBoxChamadosAddEquip.Location = new System.Drawing.Point(78, 115);
-            this.cBoxChamadosAddEquip.Name = "cBoxChamadosAddEquip";
-            this.cBoxChamadosAddEquip.Size = new System.Drawing.Size(226, 21);
-            this.cBoxChamadosAddEquip.TabIndex = 13;
+            this.gBoxChamadosAdicionar.Controls.Add(this.cBoxChamadosAddEquip);
+            this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadoAddDesc);
+            this.gBoxChamadosAdicionar.Controls.Add(this.btnChamadosAdd);
+            this.gBoxChamadosAdicionar.Controls.Add(this.maskTxtChamadosAddData);
+            this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadosAddTitulo);
+            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddEquip);
+            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddDesc);
+            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddData);
+            this.gBoxChamadosAdicionar.Controls.Add(this.lblChamadosAddTitulo);
+            this.gBoxChamadosAdicionar.Location = new System.Drawing.Point(6, 6);
+            this.gBoxChamadosAdicionar.Name = "gBoxChamadosAdicionar";
+            this.gBoxChamadosAdicionar.Size = new System.Drawing.Size(446, 149);
+            this.gBoxChamadosAdicionar.TabIndex = 3;
+            this.gBoxChamadosAdicionar.TabStop = false;
+            this.gBoxChamadosAdicionar.Text = "Adicionar";
             // 
-            // lblChamadoMostraDias
+            // txtChamadoAddDesc
             // 
-            this.lblChamadoMostraDias.AutoSize = true;
-            this.lblChamadoMostraDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChamadoMostraDias.Location = new System.Drawing.Point(260, 105);
-            this.lblChamadoMostraDias.Name = "lblChamadoMostraDias";
-            this.lblChamadoMostraDias.Size = new System.Drawing.Size(97, 16);
-            this.lblChamadoMostraDias.TabIndex = 6;
-            this.lblChamadoMostraDias.Text = "Dias aberto: ";
+            this.txtChamadoAddDesc.Location = new System.Drawing.Point(78, 58);
+            this.txtChamadoAddDesc.Multiline = true;
+            this.txtChamadoAddDesc.Name = "txtChamadoAddDesc";
+            this.txtChamadoAddDesc.Size = new System.Drawing.Size(354, 51);
+            this.txtChamadoAddDesc.TabIndex = 14;
             // 
-            // cBoxChamadoEditarEquip
+            // btnChamadosAdd
             // 
-            this.cBoxChamadoEditarEquip.FormattingEnabled = true;
-            this.cBoxChamadoEditarEquip.Items.AddRange(new object[] {
-            "hahah"});
-            this.cBoxChamadoEditarEquip.Location = new System.Drawing.Point(78, 158);
-            this.cBoxChamadoEditarEquip.Name = "cBoxChamadoEditarEquip";
-            this.cBoxChamadoEditarEquip.Size = new System.Drawing.Size(226, 21);
-            this.cBoxChamadoEditarEquip.TabIndex = 22;
-            // 
-            // btnEditarAtualizar
-            // 
-            this.btnEditarAtualizar.Location = new System.Drawing.Point(357, 161);
-            this.btnEditarAtualizar.Name = "btnEditarAtualizar";
-            this.btnEditarAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnEditarAtualizar.TabIndex = 20;
-            this.btnEditarAtualizar.Text = "Atualizar";
-            this.btnEditarAtualizar.UseVisualStyleBackColor = true;
-            this.btnEditarAtualizar.Click += new System.EventHandler(this.btnEditarAtualizar_Click);
-            // 
-            // maskTxtChamadoEditarData
-            // 
-            this.maskTxtChamadoEditarData.Location = new System.Drawing.Point(363, 68);
-            this.maskTxtChamadoEditarData.Mask = "00/00/0000";
-            this.maskTxtChamadoEditarData.Name = "maskTxtChamadoEditarData";
-            this.maskTxtChamadoEditarData.Size = new System.Drawing.Size(69, 20);
-            this.maskTxtChamadoEditarData.TabIndex = 19;
-            this.maskTxtChamadoEditarData.ValidatingType = typeof(System.DateTime);
-            // 
-            // txtChamadoEditarTitulo
-            // 
-            this.txtChamadoEditarTitulo.Location = new System.Drawing.Point(78, 68);
-            this.txtChamadoEditarTitulo.MaxLength = 40;
-            this.txtChamadoEditarTitulo.Name = "txtChamadoEditarTitulo";
-            this.txtChamadoEditarTitulo.Size = new System.Drawing.Size(226, 20);
-            this.txtChamadoEditarTitulo.TabIndex = 18;
-            // 
-            // lblChamadoEditarEquip
-            // 
-            this.lblChamadoEditarEquip.AutoSize = true;
-            this.lblChamadoEditarEquip.Location = new System.Drawing.Point(6, 161);
-            this.lblChamadoEditarEquip.Name = "lblChamadoEditarEquip";
-            this.lblChamadoEditarEquip.Size = new System.Drawing.Size(69, 13);
-            this.lblChamadoEditarEquip.TabIndex = 17;
-            this.lblChamadoEditarEquip.Text = "Equipamento";
-            // 
-            // lblChamadoEditarDesc
-            // 
-            this.lblChamadoEditarDesc.AutoSize = true;
-            this.lblChamadoEditarDesc.Location = new System.Drawing.Point(6, 101);
-            this.lblChamadoEditarDesc.Name = "lblChamadoEditarDesc";
-            this.lblChamadoEditarDesc.Size = new System.Drawing.Size(55, 13);
-            this.lblChamadoEditarDesc.TabIndex = 16;
-            this.lblChamadoEditarDesc.Text = "Descrição";
-            // 
-            // lblChamadoEditarData
-            // 
-            this.lblChamadoEditarData.AutoSize = true;
-            this.lblChamadoEditarData.Location = new System.Drawing.Point(310, 71);
-            this.lblChamadoEditarData.Name = "lblChamadoEditarData";
-            this.lblChamadoEditarData.Size = new System.Drawing.Size(47, 13);
-            this.lblChamadoEditarData.TabIndex = 15;
-            this.lblChamadoEditarData.Text = "Abertura";
-            // 
-            // lblChamadoEditarTitulo
-            // 
-            this.lblChamadoEditarTitulo.AutoSize = true;
-            this.lblChamadoEditarTitulo.Location = new System.Drawing.Point(6, 71);
-            this.lblChamadoEditarTitulo.Name = "lblChamadoEditarTitulo";
-            this.lblChamadoEditarTitulo.Size = new System.Drawing.Size(33, 13);
-            this.lblChamadoEditarTitulo.TabIndex = 14;
-            this.lblChamadoEditarTitulo.Text = "Titulo";
+            this.btnChamadosAdd.Location = new System.Drawing.Point(357, 118);
+            this.btnChamadosAdd.Name = "btnChamadosAdd";
+            this.btnChamadosAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnChamadosAdd.TabIndex = 11;
+            this.btnChamadosAdd.Text = "Adicionar";
+            this.btnChamadosAdd.UseVisualStyleBackColor = true;
+            this.btnChamadosAdd.Click += new System.EventHandler(this.btnChamadosAdd_Click);
             // 
             // maskTxtChamadosAddData
             // 
@@ -888,29 +837,76 @@
             this.maskTxtChamadosAddData.TabIndex = 10;
             this.maskTxtChamadosAddData.ValidatingType = typeof(System.DateTime);
             // 
-            // txtChamadoAddDesc
+            // txtChamadosAddTitulo
             // 
-            this.txtChamadoAddDesc.Location = new System.Drawing.Point(78, 58);
-            this.txtChamadoAddDesc.Multiline = true;
-            this.txtChamadoAddDesc.Name = "txtChamadoAddDesc";
-            this.txtChamadoAddDesc.Size = new System.Drawing.Size(354, 51);
-            this.txtChamadoAddDesc.TabIndex = 14;
+            this.txtChamadosAddTitulo.Location = new System.Drawing.Point(78, 25);
+            this.txtChamadosAddTitulo.MaxLength = 40;
+            this.txtChamadosAddTitulo.Name = "txtChamadosAddTitulo";
+            this.txtChamadosAddTitulo.Size = new System.Drawing.Size(226, 20);
+            this.txtChamadosAddTitulo.TabIndex = 5;
             // 
-            // txtChamadoEditarDesc
+            // lblChamadosAddEquip
             // 
-            this.txtChamadoEditarDesc.Location = new System.Drawing.Point(78, 101);
-            this.txtChamadoEditarDesc.Multiline = true;
-            this.txtChamadoEditarDesc.Name = "txtChamadoEditarDesc";
-            this.txtChamadoEditarDesc.Size = new System.Drawing.Size(354, 51);
-            this.txtChamadoEditarDesc.TabIndex = 23;
+            this.lblChamadosAddEquip.AutoSize = true;
+            this.lblChamadosAddEquip.Location = new System.Drawing.Point(6, 123);
+            this.lblChamadosAddEquip.Name = "lblChamadosAddEquip";
+            this.lblChamadosAddEquip.Size = new System.Drawing.Size(69, 13);
+            this.lblChamadosAddEquip.TabIndex = 3;
+            this.lblChamadosAddEquip.Text = "Equipamento";
             // 
-            // txtEquipEditarPreco
+            // lblChamadosAddDesc
             // 
-            this.txtEquipEditarPreco.Location = new System.Drawing.Point(138, 96);
-            this.txtEquipEditarPreco.MaxLength = 7;
-            this.txtEquipEditarPreco.Name = "txtEquipEditarPreco";
-            this.txtEquipEditarPreco.Size = new System.Drawing.Size(62, 20);
-            this.txtEquipEditarPreco.TabIndex = 24;
+            this.lblChamadosAddDesc.AutoSize = true;
+            this.lblChamadosAddDesc.Location = new System.Drawing.Point(6, 58);
+            this.lblChamadosAddDesc.Name = "lblChamadosAddDesc";
+            this.lblChamadosAddDesc.Size = new System.Drawing.Size(55, 13);
+            this.lblChamadosAddDesc.TabIndex = 2;
+            this.lblChamadosAddDesc.Text = "Descrição";
+            // 
+            // lblChamadosAddData
+            // 
+            this.lblChamadosAddData.AutoSize = true;
+            this.lblChamadosAddData.Location = new System.Drawing.Point(310, 28);
+            this.lblChamadosAddData.Name = "lblChamadosAddData";
+            this.lblChamadosAddData.Size = new System.Drawing.Size(47, 13);
+            this.lblChamadosAddData.TabIndex = 1;
+            this.lblChamadosAddData.Text = "Abertura";
+            // 
+            // lblChamadosAddTitulo
+            // 
+            this.lblChamadosAddTitulo.AutoSize = true;
+            this.lblChamadosAddTitulo.Location = new System.Drawing.Point(6, 28);
+            this.lblChamadosAddTitulo.Name = "lblChamadosAddTitulo";
+            this.lblChamadosAddTitulo.Size = new System.Drawing.Size(33, 13);
+            this.lblChamadosAddTitulo.TabIndex = 0;
+            this.lblChamadosAddTitulo.Text = "Titulo";
+            // 
+            // lkLblSobre
+            // 
+            this.lkLblSobre.AutoSize = true;
+            this.lkLblSobre.Location = new System.Drawing.Point(436, 645);
+            this.lkLblSobre.Name = "lkLblSobre";
+            this.lkLblSobre.Size = new System.Drawing.Size(35, 13);
+            this.lkLblSobre.TabIndex = 1;
+            this.lkLblSobre.TabStop = true;
+            this.lkLblSobre.Text = "Sobre";
+            this.lkLblSobre.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lkLblSobre_LinkClicked);
+            // 
+            // cBoxChamadosAddEquip
+            // 
+            this.cBoxChamadosAddEquip.FormattingEnabled = true;
+            this.cBoxChamadosAddEquip.Location = new System.Drawing.Point(78, 118);
+            this.cBoxChamadosAddEquip.Name = "cBoxChamadosAddEquip";
+            this.cBoxChamadosAddEquip.Size = new System.Drawing.Size(198, 21);
+            this.cBoxChamadosAddEquip.TabIndex = 7;
+            // 
+            // cBoxChamadosEditarEquip
+            // 
+            this.cBoxChamadosEditarEquip.FormattingEnabled = true;
+            this.cBoxChamadosEditarEquip.Location = new System.Drawing.Point(78, 166);
+            this.cBoxChamadosEditarEquip.Name = "cBoxChamadosEditarEquip";
+            this.cBoxChamadosEditarEquip.Size = new System.Drawing.Size(198, 21);
+            this.cBoxChamadosEditarEquip.TabIndex = 24;
             // 
             // TelaPrincipal
             // 
@@ -923,23 +919,23 @@
             this.Text = "Academia Do Programador 2021";
             this.tabGeral.ResumeLayout(false);
             this.tabEquipamentos.ResumeLayout(false);
-            this.tabChamados.ResumeLayout(false);
-            this.gBoxEquipamentosAdicionar.ResumeLayout(false);
-            this.gBoxEquipamentosAdicionar.PerformLayout();
-            this.gBoxEquipamentosEditar.ResumeLayout(false);
-            this.gBoxEquipamentosEditar.PerformLayout();
             this.gBoxEquipamentosDeletar.ResumeLayout(false);
             this.gBoxEquipamentosDeletar.PerformLayout();
-            this.gBoxChamadosAdicionar.ResumeLayout(false);
-            this.gBoxChamadosAdicionar.PerformLayout();
+            this.gBoxEquipamentosEditar.ResumeLayout(false);
+            this.gBoxEquipamentosEditar.PerformLayout();
+            this.gBoxEquipamentosAdicionar.ResumeLayout(false);
+            this.gBoxEquipamentosAdicionar.PerformLayout();
             this.gBoxEquipamentosBuscar.ResumeLayout(false);
             this.gBoxEquipamentosBuscar.PerformLayout();
+            this.tabChamados.ResumeLayout(false);
             this.gBoxChamadosDeletar.ResumeLayout(false);
             this.gBoxChamadosDeletar.PerformLayout();
             this.gBoxChamadosEditar.ResumeLayout(false);
             this.gBoxChamadosEditar.PerformLayout();
             this.gBoxChamadosBuscar.ResumeLayout(false);
             this.gBoxChamadosBuscar.PerformLayout();
+            this.gBoxChamadosAdicionar.ResumeLayout(false);
+            this.gBoxChamadosAdicionar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1012,9 +1008,7 @@
         private System.Windows.Forms.Label lblChamadosAddDesc;
         private System.Windows.Forms.Label lblChamadosAddData;
         private System.Windows.Forms.Label lblChamadosAddTitulo;
-        private System.Windows.Forms.ComboBox cBoxChamadosAddEquip;
         private System.Windows.Forms.Label lblChamadoMostraDias;
-        private System.Windows.Forms.ComboBox cBoxChamadoEditarEquip;
         private System.Windows.Forms.Button btnEditarAtualizar;
         private System.Windows.Forms.MaskedTextBox maskTxtChamadoEditarData;
         private System.Windows.Forms.TextBox txtChamadoEditarTitulo;
@@ -1026,6 +1020,8 @@
         private System.Windows.Forms.TextBox txtChamadoEditarDesc;
         private System.Windows.Forms.TextBox txtChamadoAddDesc;
         private System.Windows.Forms.TextBox txtEquipEditarPreco;
+        private System.Windows.Forms.ComboBox cBoxChamadosAddEquip;
+        private System.Windows.Forms.ComboBox cBoxChamadosEditarEquip;
     }
 }
 

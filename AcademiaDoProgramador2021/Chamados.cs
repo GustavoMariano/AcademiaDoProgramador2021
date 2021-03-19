@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -44,7 +45,8 @@ namespace AcademiaDoProgramador2021
                 this.mensagem = "Erro ao se conectar com o banco de dados" + e;
                 throw;
             }
-        }
+        }       
+        
 
         public void EditaChamado(String titulo, String descricao, String equipamento, DateTime data, int id)
         {
@@ -141,6 +143,45 @@ namespace AcademiaDoProgramador2021
                 this.mensagem = "Erro ao se conectar com o banco de dados" + e;
                 throw;
             }
-        }
+        }     
+
     }
+
+    public class Nomes
+    {
+        public string nome { get; set; }
+
+        Db db = new Db();
+        public SqlCommand cmd = new SqlCommand();
+        public String mensagem = "";
+
+
+        public List<Nomes> ListarNomes()
+        {
+
+            // select que vai ao banco e retorna a consulta já ordenada
+            string qry = "select nome from equipamentos";
+            //mandar instrucoes ao sql  (Command)
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = db.conectar();
+            cmd.CommandText = qry;
+            SqlDataReader dr = cmd.ExecuteReader();
+            List<Nomes> nomesCBox = new List<Nomes>();
+            // quando acabar as linhas que retornou da consulta, sai do While
+            while (dr.Read())
+            {
+                Nomes nom = new Nomes();
+                nom.nome = dr.GetString(dr.GetOrdinal("nome"));
+                nomesCBox.Add(nom);
+            }
+
+            cmd.Connection.Close();
+            cmd.Dispose();
+
+            return nomesCBox;
+
+        }
+
+    }
+    
 }
