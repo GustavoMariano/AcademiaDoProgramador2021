@@ -23,7 +23,7 @@ namespace AcademiaDoProgramador2021
 
         public void AddChamado(String titulo, String descricao, String equipamento, DateTime data)
         {
-            cmd.CommandText = "insert into chamados (Titulo, Descricao, Equipamento, Data) VALUES (@Titulo, @Descricao, @Equipamento, @Data)";
+            cmd.CommandText = "insert into chamados (Titulo, Descricao, Equipamento, Data) VALUES (@Titulo, @Descricao, @Equipamento, @Data); SELECT SCOPE_IDENTITY()";
 
             cmd.Parameters.AddWithValue("@Titulo", titulo);
             cmd.Parameters.AddWithValue("@Descricao", descricao);
@@ -34,11 +34,11 @@ namespace AcademiaDoProgramador2021
             {
                 cmd.Connection = db.conectar(); //Conectando com o banco
 
-                cmd.ExecuteNonQuery(); //Executa o comando
+                int ultimoId = Convert.ToInt32(cmd.ExecuteScalar()); //Executa o comando
 
                 db.desconectar(); //Desconecta do banco
 
-                MessageBox.Show("Cadastrado com sucesso"); //Mensagem de sucesso
+                MessageBox.Show("Cadastrado com sucesso, ID:" + ultimoId); //Mensagem de sucesso
             }
             catch (SqlException e)
             {

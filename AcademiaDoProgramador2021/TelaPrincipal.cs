@@ -73,7 +73,6 @@ namespace AcademiaDoProgramador2021
                 //Executa o metodo AddChamados utilizando chamados
                 chamados.AddChamado(chamados.titulo, chamados.descricao, chamados.equipamento, chamados.data);
 
-                MessageBox.Show("ID: " + chamados.id);
 
                 //Limpa campos
                 txtChamadosAddTitulo.Text = "";
