@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chamados.cs" />
+    <Compile Include="Db.cs" />
     <Compile Include="Equipamentos.cs" />
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>

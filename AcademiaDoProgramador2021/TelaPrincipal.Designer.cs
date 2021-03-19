@@ -276,6 +276,7 @@
             // txtEquipAddNome
             // 
             this.txtEquipAddNome.Location = new System.Drawing.Point(47, 24);
+            this.txtEquipAddNome.MaxLength = 40;
             this.txtEquipAddNome.Name = "txtEquipAddNome";
             this.txtEquipAddNome.Size = new System.Drawing.Size(153, 20);
             this.txtEquipAddNome.TabIndex = 5;
@@ -301,6 +302,7 @@
             // txtEquipAddFabricante
             // 
             this.txtEquipAddFabricante.Location = new System.Drawing.Point(69, 80);
+            this.txtEquipAddFabricante.MaxLength = 40;
             this.txtEquipAddFabricante.Name = "txtEquipAddFabricante";
             this.txtEquipAddFabricante.Size = new System.Drawing.Size(131, 20);
             this.txtEquipAddFabricante.TabIndex = 8;
@@ -308,6 +310,7 @@
             // txtEquipAddSn
             // 
             this.txtEquipAddSn.Location = new System.Drawing.Point(325, 24);
+            this.txtEquipAddSn.MaxLength = 20;
             this.txtEquipAddSn.Name = "txtEquipAddSn";
             this.txtEquipAddSn.Size = new System.Drawing.Size(113, 20);
             this.txtEquipAddSn.TabIndex = 9;
@@ -351,6 +354,7 @@
             // txtEquipEditarBuscarSn
             // 
             this.txtEquipEditarBuscarSn.Location = new System.Drawing.Point(165, 21);
+            this.txtEquipEditarBuscarSn.MaxLength = 20;
             this.txtEquipEditarBuscarSn.Name = "txtEquipEditarBuscarSn";
             this.txtEquipEditarBuscarSn.Size = new System.Drawing.Size(113, 20);
             this.txtEquipEditarBuscarSn.TabIndex = 3;
@@ -376,6 +380,7 @@
             // txtEquipEditarSn
             // 
             this.txtEquipEditarSn.Location = new System.Drawing.Point(325, 70);
+            this.txtEquipEditarSn.MaxLength = 20;
             this.txtEquipEditarSn.Name = "txtEquipEditarSn";
             this.txtEquipEditarSn.Size = new System.Drawing.Size(113, 20);
             this.txtEquipEditarSn.TabIndex = 21;
@@ -383,6 +388,7 @@
             // txtEquipEditarFabricante
             // 
             this.txtEquipEditarFabricante.Location = new System.Drawing.Point(69, 126);
+            this.txtEquipEditarFabricante.MaxLength = 40;
             this.txtEquipEditarFabricante.Name = "txtEquipEditarFabricante";
             this.txtEquipEditarFabricante.Size = new System.Drawing.Size(131, 20);
             this.txtEquipEditarFabricante.TabIndex = 20;
@@ -408,6 +414,7 @@
             // txtEquipEditarNome
             // 
             this.txtEquipEditarNome.Location = new System.Drawing.Point(47, 70);
+            this.txtEquipEditarNome.MaxLength = 40;
             this.txtEquipEditarNome.Name = "txtEquipEditarNome";
             this.txtEquipEditarNome.Size = new System.Drawing.Size(153, 20);
             this.txtEquipEditarNome.TabIndex = 17;
@@ -478,6 +485,7 @@
             // txtEquipDeletarSn
             // 
             this.txtEquipDeletarSn.Location = new System.Drawing.Point(169, 29);
+            this.txtEquipDeletarSn.MaxLength = 20;
             this.txtEquipDeletarSn.Name = "txtEquipDeletarSn";
             this.txtEquipDeletarSn.Size = new System.Drawing.Size(113, 20);
             this.txtEquipDeletarSn.TabIndex = 6;
@@ -521,6 +529,7 @@
             // txtChamadosAddTitulo
             // 
             this.txtChamadosAddTitulo.Location = new System.Drawing.Point(78, 25);
+            this.txtChamadosAddTitulo.MaxLength = 40;
             this.txtChamadosAddTitulo.Name = "txtChamadosAddTitulo";
             this.txtChamadosAddTitulo.Size = new System.Drawing.Size(226, 20);
             this.txtChamadosAddTitulo.TabIndex = 5;
@@ -564,6 +573,7 @@
             // txtEquipBuscarSn
             // 
             this.txtEquipBuscarSn.Location = new System.Drawing.Point(165, 30);
+            this.txtEquipBuscarSn.MaxLength = 20;
             this.txtEquipBuscarSn.Name = "txtEquipBuscarSn";
             this.txtEquipBuscarSn.Size = new System.Drawing.Size(113, 20);
             this.txtEquipBuscarSn.TabIndex = 0;
@@ -788,6 +798,7 @@
             // rTxtChamadosAddDesc
             // 
             this.rTxtChamadosAddDesc.Location = new System.Drawing.Point(78, 58);
+            this.rTxtChamadosAddDesc.MaxLength = 255;
             this.rTxtChamadosAddDesc.Name = "rTxtChamadosAddDesc";
             this.rTxtChamadosAddDesc.Size = new System.Drawing.Size(354, 47);
             this.rTxtChamadosAddDesc.TabIndex = 12;
@@ -848,6 +859,7 @@
             // txtChamadoEditarTitulo
             // 
             this.txtChamadoEditarTitulo.Location = new System.Drawing.Point(78, 68);
+            this.txtChamadoEditarTitulo.MaxLength = 40;
             this.txtChamadoEditarTitulo.Name = "txtChamadoEditarTitulo";
             this.txtChamadoEditarTitulo.Size = new System.Drawing.Size(226, 20);
             this.txtChamadoEditarTitulo.TabIndex = 18;
