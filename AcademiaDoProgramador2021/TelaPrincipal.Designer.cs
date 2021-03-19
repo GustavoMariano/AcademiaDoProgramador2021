@@ -55,7 +55,6 @@
             this.txtEquipEditarSn = new System.Windows.Forms.TextBox();
             this.txtEquipEditarFabricante = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskTxtEquipEditarPreco = new System.Windows.Forms.MaskedTextBox();
             this.txtEquipEditarNome = new System.Windows.Forms.TextBox();
             this.lblEquipEditarFabricante = new System.Windows.Forms.Label();
             this.lblEquipEditarFabricacao = new System.Windows.Forms.Label();
@@ -107,6 +106,7 @@
             this.maskTxtChamadosAddData = new System.Windows.Forms.MaskedTextBox();
             this.txtChamadoAddDesc = new System.Windows.Forms.TextBox();
             this.txtChamadoEditarDesc = new System.Windows.Forms.TextBox();
+            this.txtEquipEditarPreco = new System.Windows.Forms.TextBox();
             this.tabGeral.SuspendLayout();
             this.tabEquipamentos.SuspendLayout();
             this.tabChamados.SuspendLayout();
@@ -194,12 +194,12 @@
             // 
             // gBoxEquipamentosEditar
             // 
+            this.gBoxEquipamentosEditar.Controls.Add(this.txtEquipEditarPreco);
             this.gBoxEquipamentosEditar.Controls.Add(this.btnSalvar);
             this.gBoxEquipamentosEditar.Controls.Add(this.maskTxtEquipEditarData);
             this.gBoxEquipamentosEditar.Controls.Add(this.txtEquipEditarSn);
             this.gBoxEquipamentosEditar.Controls.Add(this.txtEquipEditarFabricante);
             this.gBoxEquipamentosEditar.Controls.Add(this.label1);
-            this.gBoxEquipamentosEditar.Controls.Add(this.maskTxtEquipEditarPreco);
             this.gBoxEquipamentosEditar.Controls.Add(this.txtEquipEditarNome);
             this.gBoxEquipamentosEditar.Controls.Add(this.lblEquipEditarFabricante);
             this.gBoxEquipamentosEditar.Controls.Add(this.lblEquipEditarFabricacao);
@@ -284,7 +284,7 @@
             // maskTxtEquipAddPreco
             // 
             this.maskTxtEquipAddPreco.Location = new System.Drawing.Point(138, 51);
-            this.maskTxtEquipAddPreco.Mask = "000000.00";
+            this.maskTxtEquipAddPreco.Mask = "0000.00";
             this.maskTxtEquipAddPreco.Name = "maskTxtEquipAddPreco";
             this.maskTxtEquipAddPreco.Size = new System.Drawing.Size(62, 20);
             this.maskTxtEquipAddPreco.TabIndex = 6;
@@ -332,6 +332,7 @@
             this.btnEquipAdd.TabIndex = 11;
             this.btnEquipAdd.Text = "Adicionar";
             this.btnEquipAdd.UseVisualStyleBackColor = true;
+            this.btnEquipAdd.Click += new System.EventHandler(this.btnEquipAdd_Click);
             // 
             // btnEquipEditarBuscar
             // 
@@ -341,6 +342,7 @@
             this.btnEquipEditarBuscar.TabIndex = 5;
             this.btnEquipEditarBuscar.Text = "Buscar";
             this.btnEquipEditarBuscar.UseVisualStyleBackColor = true;
+            this.btnEquipEditarBuscar.Click += new System.EventHandler(this.btnEquipEditarBuscar_Click);
             // 
             // lblEquipEditarBuscarSn
             // 
@@ -367,6 +369,7 @@
             this.btnSalvar.TabIndex = 23;
             this.btnSalvar.Text = "Salvar Alterações";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // maskTxtEquipEditarData
             // 
@@ -401,15 +404,6 @@
             this.label1.Size = new System.Drawing.Size(21, 13);
             this.label1.TabIndex = 19;
             this.label1.Text = "R$";
-            // 
-            // maskTxtEquipEditarPreco
-            // 
-            this.maskTxtEquipEditarPreco.Location = new System.Drawing.Point(138, 97);
-            this.maskTxtEquipEditarPreco.Mask = "000000.00";
-            this.maskTxtEquipEditarPreco.Name = "maskTxtEquipEditarPreco";
-            this.maskTxtEquipEditarPreco.Size = new System.Drawing.Size(62, 20);
-            this.maskTxtEquipEditarPreco.TabIndex = 18;
-            this.maskTxtEquipEditarPreco.ValidatingType = typeof(int);
             // 
             // txtEquipEditarNome
             // 
@@ -472,6 +466,7 @@
             this.btnDeletar.TabIndex = 8;
             this.btnDeletar.Text = "Deletar";
             this.btnDeletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Click += new System.EventHandler(this.btnDeletar_Click);
             // 
             // lblEquipDeletarSn
             // 
@@ -587,6 +582,7 @@
             this.btnBuscarSn.TabIndex = 2;
             this.btnBuscarSn.Text = "Buscar";
             this.btnBuscarSn.UseVisualStyleBackColor = true;
+            this.btnBuscarSn.Click += new System.EventHandler(this.btnBuscarSn_Click);
             // 
             // lblEquipMostraNome
             // 
@@ -908,6 +904,14 @@
             this.txtChamadoEditarDesc.Size = new System.Drawing.Size(354, 51);
             this.txtChamadoEditarDesc.TabIndex = 23;
             // 
+            // txtEquipEditarPreco
+            // 
+            this.txtEquipEditarPreco.Location = new System.Drawing.Point(138, 96);
+            this.txtEquipEditarPreco.MaxLength = 7;
+            this.txtEquipEditarPreco.Name = "txtEquipEditarPreco";
+            this.txtEquipEditarPreco.Size = new System.Drawing.Size(62, 20);
+            this.txtEquipEditarPreco.TabIndex = 24;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -970,7 +974,6 @@
         private System.Windows.Forms.TextBox txtEquipEditarSn;
         private System.Windows.Forms.TextBox txtEquipEditarFabricante;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.MaskedTextBox maskTxtEquipEditarPreco;
         private System.Windows.Forms.TextBox txtEquipEditarNome;
         private System.Windows.Forms.Label lblEquipEditarFabricante;
         private System.Windows.Forms.Label lblEquipEditarFabricacao;
@@ -1022,6 +1025,7 @@
         private System.Windows.Forms.MaskedTextBox maskTxtChamadosAddData;
         private System.Windows.Forms.TextBox txtChamadoEditarDesc;
         private System.Windows.Forms.TextBox txtChamadoAddDesc;
+        private System.Windows.Forms.TextBox txtEquipEditarPreco;
     }
 }
 
