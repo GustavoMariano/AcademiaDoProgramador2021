@@ -67,7 +67,6 @@
             this.txtEquipDeletarSn = new System.Windows.Forms.TextBox();
             this.gBoxChamadosAdicionar = new System.Windows.Forms.GroupBox();
             this.btnChamadosAdd = new System.Windows.Forms.Button();
-            this.maskTxtChamadosAddData = new System.Windows.Forms.MaskedTextBox();
             this.txtChamadosAddTitulo = new System.Windows.Forms.TextBox();
             this.lblChamadosAddEquip = new System.Windows.Forms.Label();
             this.lblChamadosAddDesc = new System.Windows.Forms.Label();
@@ -95,11 +94,9 @@
             this.btnChamadosBuscar = new System.Windows.Forms.Button();
             this.lblChamadosBuscarId = new System.Windows.Forms.Label();
             this.txtChamadosBuscarId = new System.Windows.Forms.TextBox();
-            this.rTxtChamadosAddDesc = new System.Windows.Forms.RichTextBox();
             this.cBoxChamadosAddEquip = new System.Windows.Forms.ComboBox();
             this.lblChamadoMostraDias = new System.Windows.Forms.Label();
             this.cBoxChamadoEditarEquip = new System.Windows.Forms.ComboBox();
-            this.rTxtChamadoEditarDesc = new System.Windows.Forms.RichTextBox();
             this.btnEditarAtualizar = new System.Windows.Forms.Button();
             this.maskTxtChamadoEditarData = new System.Windows.Forms.MaskedTextBox();
             this.txtChamadoEditarTitulo = new System.Windows.Forms.TextBox();
@@ -107,6 +104,9 @@
             this.lblChamadoEditarDesc = new System.Windows.Forms.Label();
             this.lblChamadoEditarData = new System.Windows.Forms.Label();
             this.lblChamadoEditarTitulo = new System.Windows.Forms.Label();
+            this.maskTxtChamadosAddData = new System.Windows.Forms.MaskedTextBox();
+            this.txtChamadoAddDesc = new System.Windows.Forms.TextBox();
+            this.txtChamadoEditarDesc = new System.Windows.Forms.TextBox();
             this.tabGeral.SuspendLayout();
             this.tabEquipamentos.SuspendLayout();
             this.tabChamados.SuspendLayout();
@@ -492,8 +492,8 @@
             // 
             // gBoxChamadosAdicionar
             // 
+            this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadoAddDesc);
             this.gBoxChamadosAdicionar.Controls.Add(this.cBoxChamadosAddEquip);
-            this.gBoxChamadosAdicionar.Controls.Add(this.rTxtChamadosAddDesc);
             this.gBoxChamadosAdicionar.Controls.Add(this.btnChamadosAdd);
             this.gBoxChamadosAdicionar.Controls.Add(this.maskTxtChamadosAddData);
             this.gBoxChamadosAdicionar.Controls.Add(this.txtChamadosAddTitulo);
@@ -516,15 +516,7 @@
             this.btnChamadosAdd.TabIndex = 11;
             this.btnChamadosAdd.Text = "Adicionar";
             this.btnChamadosAdd.UseVisualStyleBackColor = true;
-            // 
-            // maskTxtChamadosAddData
-            // 
-            this.maskTxtChamadosAddData.Location = new System.Drawing.Point(363, 25);
-            this.maskTxtChamadosAddData.Mask = "00/00/0000";
-            this.maskTxtChamadosAddData.Name = "maskTxtChamadosAddData";
-            this.maskTxtChamadosAddData.Size = new System.Drawing.Size(69, 20);
-            this.maskTxtChamadosAddData.TabIndex = 10;
-            this.maskTxtChamadosAddData.ValidatingType = typeof(System.DateTime);
+            this.btnChamadosAdd.Click += new System.EventHandler(this.btnChamadosAdd_Click);
             // 
             // txtChamadosAddTitulo
             // 
@@ -661,6 +653,7 @@
             this.btnChamadoDeletar.TabIndex = 8;
             this.btnChamadoDeletar.Text = "Deletar";
             this.btnChamadoDeletar.UseVisualStyleBackColor = true;
+            this.btnChamadoDeletar.Click += new System.EventHandler(this.btnChamadoDeletar_Click);
             // 
             // lblChamadoDeletarId
             // 
@@ -680,8 +673,8 @@
             // 
             // gBoxChamadosEditar
             // 
+            this.gBoxChamadosEditar.Controls.Add(this.txtChamadoEditarDesc);
             this.gBoxChamadosEditar.Controls.Add(this.cBoxChamadoEditarEquip);
-            this.gBoxChamadosEditar.Controls.Add(this.rTxtChamadoEditarDesc);
             this.gBoxChamadosEditar.Controls.Add(this.btnEditarAtualizar);
             this.gBoxChamadosEditar.Controls.Add(this.maskTxtChamadoEditarData);
             this.gBoxChamadosEditar.Controls.Add(this.txtChamadoEditarTitulo);
@@ -707,6 +700,7 @@
             this.btnChamadosEditarBuscar.TabIndex = 5;
             this.btnChamadosEditarBuscar.Text = "Buscar";
             this.btnChamadosEditarBuscar.UseVisualStyleBackColor = true;
+            this.btnChamadosEditarBuscar.Click += new System.EventHandler(this.btnChamadosEditarBuscar_Click);
             // 
             // lblChamadosEditarBuscarId
             // 
@@ -778,6 +772,7 @@
             this.btnChamadosBuscar.TabIndex = 2;
             this.btnChamadosBuscar.Text = "Buscar";
             this.btnChamadosBuscar.UseVisualStyleBackColor = true;
+            this.btnChamadosBuscar.Click += new System.EventHandler(this.btnChamadosBuscar_Click);
             // 
             // lblChamadosBuscarId
             // 
@@ -795,18 +790,11 @@
             this.txtChamadosBuscarId.Size = new System.Drawing.Size(113, 20);
             this.txtChamadosBuscarId.TabIndex = 0;
             // 
-            // rTxtChamadosAddDesc
-            // 
-            this.rTxtChamadosAddDesc.Location = new System.Drawing.Point(78, 58);
-            this.rTxtChamadosAddDesc.MaxLength = 255;
-            this.rTxtChamadosAddDesc.Name = "rTxtChamadosAddDesc";
-            this.rTxtChamadosAddDesc.Size = new System.Drawing.Size(354, 47);
-            this.rTxtChamadosAddDesc.TabIndex = 12;
-            this.rTxtChamadosAddDesc.Text = "";
-            // 
             // cBoxChamadosAddEquip
             // 
             this.cBoxChamadosAddEquip.FormattingEnabled = true;
+            this.cBoxChamadosAddEquip.Items.AddRange(new object[] {
+            "ha"});
             this.cBoxChamadosAddEquip.Location = new System.Drawing.Point(78, 115);
             this.cBoxChamadosAddEquip.Name = "cBoxChamadosAddEquip";
             this.cBoxChamadosAddEquip.Size = new System.Drawing.Size(226, 21);
@@ -825,18 +813,12 @@
             // cBoxChamadoEditarEquip
             // 
             this.cBoxChamadoEditarEquip.FormattingEnabled = true;
+            this.cBoxChamadoEditarEquip.Items.AddRange(new object[] {
+            "hahah"});
             this.cBoxChamadoEditarEquip.Location = new System.Drawing.Point(78, 158);
             this.cBoxChamadoEditarEquip.Name = "cBoxChamadoEditarEquip";
             this.cBoxChamadoEditarEquip.Size = new System.Drawing.Size(226, 21);
             this.cBoxChamadoEditarEquip.TabIndex = 22;
-            // 
-            // rTxtChamadoEditarDesc
-            // 
-            this.rTxtChamadoEditarDesc.Location = new System.Drawing.Point(78, 101);
-            this.rTxtChamadoEditarDesc.Name = "rTxtChamadoEditarDesc";
-            this.rTxtChamadoEditarDesc.Size = new System.Drawing.Size(354, 47);
-            this.rTxtChamadoEditarDesc.TabIndex = 21;
-            this.rTxtChamadoEditarDesc.Text = "";
             // 
             // btnEditarAtualizar
             // 
@@ -846,6 +828,7 @@
             this.btnEditarAtualizar.TabIndex = 20;
             this.btnEditarAtualizar.Text = "Atualizar";
             this.btnEditarAtualizar.UseVisualStyleBackColor = true;
+            this.btnEditarAtualizar.Click += new System.EventHandler(this.btnEditarAtualizar_Click);
             // 
             // maskTxtChamadoEditarData
             // 
@@ -899,6 +882,31 @@
             this.lblChamadoEditarTitulo.Size = new System.Drawing.Size(33, 13);
             this.lblChamadoEditarTitulo.TabIndex = 14;
             this.lblChamadoEditarTitulo.Text = "Titulo";
+            // 
+            // maskTxtChamadosAddData
+            // 
+            this.maskTxtChamadosAddData.Location = new System.Drawing.Point(363, 25);
+            this.maskTxtChamadosAddData.Mask = "00/00/0000";
+            this.maskTxtChamadosAddData.Name = "maskTxtChamadosAddData";
+            this.maskTxtChamadosAddData.Size = new System.Drawing.Size(69, 20);
+            this.maskTxtChamadosAddData.TabIndex = 10;
+            this.maskTxtChamadosAddData.ValidatingType = typeof(System.DateTime);
+            // 
+            // txtChamadoAddDesc
+            // 
+            this.txtChamadoAddDesc.Location = new System.Drawing.Point(78, 58);
+            this.txtChamadoAddDesc.Multiline = true;
+            this.txtChamadoAddDesc.Name = "txtChamadoAddDesc";
+            this.txtChamadoAddDesc.Size = new System.Drawing.Size(354, 51);
+            this.txtChamadoAddDesc.TabIndex = 14;
+            // 
+            // txtChamadoEditarDesc
+            // 
+            this.txtChamadoEditarDesc.Location = new System.Drawing.Point(78, 101);
+            this.txtChamadoEditarDesc.Multiline = true;
+            this.txtChamadoEditarDesc.Name = "txtChamadoEditarDesc";
+            this.txtChamadoEditarDesc.Size = new System.Drawing.Size(354, 51);
+            this.txtChamadoEditarDesc.TabIndex = 23;
             // 
             // TelaPrincipal
             // 
@@ -996,17 +1004,14 @@
         private System.Windows.Forms.TextBox txtChamadosBuscarId;
         private System.Windows.Forms.GroupBox gBoxChamadosAdicionar;
         private System.Windows.Forms.Button btnChamadosAdd;
-        private System.Windows.Forms.MaskedTextBox maskTxtChamadosAddData;
         private System.Windows.Forms.TextBox txtChamadosAddTitulo;
         private System.Windows.Forms.Label lblChamadosAddEquip;
         private System.Windows.Forms.Label lblChamadosAddDesc;
         private System.Windows.Forms.Label lblChamadosAddData;
         private System.Windows.Forms.Label lblChamadosAddTitulo;
-        private System.Windows.Forms.RichTextBox rTxtChamadosAddDesc;
         private System.Windows.Forms.ComboBox cBoxChamadosAddEquip;
         private System.Windows.Forms.Label lblChamadoMostraDias;
         private System.Windows.Forms.ComboBox cBoxChamadoEditarEquip;
-        private System.Windows.Forms.RichTextBox rTxtChamadoEditarDesc;
         private System.Windows.Forms.Button btnEditarAtualizar;
         private System.Windows.Forms.MaskedTextBox maskTxtChamadoEditarData;
         private System.Windows.Forms.TextBox txtChamadoEditarTitulo;
@@ -1014,6 +1019,9 @@
         private System.Windows.Forms.Label lblChamadoEditarDesc;
         private System.Windows.Forms.Label lblChamadoEditarData;
         private System.Windows.Forms.Label lblChamadoEditarTitulo;
+        private System.Windows.Forms.MaskedTextBox maskTxtChamadosAddData;
+        private System.Windows.Forms.TextBox txtChamadoEditarDesc;
+        private System.Windows.Forms.TextBox txtChamadoAddDesc;
     }
 }
 

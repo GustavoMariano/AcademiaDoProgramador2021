@@ -14,7 +14,7 @@ namespace AcademiaDoProgramador2021
 
         public Db()
         {
-            con.ConnectionString = @"Data Source=DESKTOP-G99C339;Initial Catalog=DB.Crud;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DESKTOP-G99C339;Initial Catalog=AcademiaDoProgramador2021;Integrated Security=True";
         }
 
         public SqlConnection conectar()

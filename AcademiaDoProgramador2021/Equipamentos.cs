@@ -12,7 +12,7 @@ namespace AcademiaDoProgramador2021
         public string nome { get; set; }
         public float preco { get; set; }
         public string sn { get; set; }
-        public string data { get; set; }
+        public DateTime data { get; set; }
         public string fabricante { get; set; }
 
         Db db = new Db();
