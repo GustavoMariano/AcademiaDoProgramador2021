@@ -1,5 +1,3 @@
-Drop database AcademiaDoProgramador2021
-
 create database AcademiaDoProgramador2021
 
 use AcademiaDoProgramador2021
